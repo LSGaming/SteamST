@@ -107,10 +107,10 @@ ECHO %programname% is started
 
 :restart
 
-IF "%B%"=="1" START G:\Server\Steam\GMod\srcds.exe
-IF "%B%"=="2" START G:\Server\Steam\CS\Source\srcds.exe
-IF "%B%"=="3" START G:\Server\Steam\CS\GO\srcds.exe
-IF "%B%"=="4" START G:\Server\Steam\L4D2\srcds.exe
+IF "%B%"=="1" START G:\Server\Steam\GMod\srcds.exe & GOTO start
+IF "%B%"=="2" START G:\Server\Steam\CS\Source\srcds.exe & GOTO start
+IF "%B%"=="3" START G:\Server\Steam\CS\GO\srcds.exe & GOTO start
+IF "%B%"=="4" START G:\Server\Steam\L4D2\srcds.exe & GOTO start
 
 
 :login
