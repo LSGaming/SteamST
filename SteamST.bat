@@ -36,7 +36,6 @@ SET "A="
 SET /P A=Choose number of choice and press [ENTER] 
 ECHO Loading.........
 IF "%A%"=="1" GOTO server
-::IF "%A%"=="1" GOTO start
 IF "%A%"=="2" GOTO login
 IF "%A%"=="3" EXIT
 
@@ -65,14 +64,8 @@ ECHO.
 SET "B="
 SET /P B=Choose number of choice and press [ENTER] 
 ECHO Loading.........
-::IF "%B%"=="1" set runcmd G:\Server\Steam\GMod
-::IF "%B%"=="1" set app=4020
 IF "%B%"=="1" GOTO run-server
-::IF "%B%"=="2" set runcmd G:\Server\Steam\CS\Source
-::IF "%B%"=="2" set app=232330
 IF "%B%"=="2" GOTO run-server
-::IF "%B%"=="3" set runcmd G:\Server\Steam\CS\GO
-::IF "%B%"=="3" set app=740 
 IF "%B%"=="3" GOTO run-server 
 IF "%B%"=="4" EXIT
 IF "%B%"=="5" GOTO start
@@ -116,7 +109,7 @@ IF "%C%"=="3" EXIT
 cls
 CD %runcmd%
 title %programname% - %servername%
-ECHO %programname% is gestart
+ECHO %programname% is started
 
  :restart
 
@@ -188,8 +181,8 @@ IF "%E%"=="4" GOTO update
 IF "%E%"=="5" EXIT
 IF "%E%"=="6" GOTO start
 
-:update
 
+:update
 
 cls
 CD %runcmd%
@@ -226,8 +219,8 @@ IF "%F%"=="4" GOTO install
 IF "%F%"=="5" EXIT
 IF "%F%"=="6" GOTO start
 
-:run
 
+:run
 
 cls
 CD %runcmd%
@@ -257,8 +250,10 @@ ECHO.
 SET "G="
 SET /P G=Choose number of choice and press [ENTER] 
 ECHO Loading.........
+IF "%G%"=="1" ECHO Writing script.txt
 IF "%G%"=="2" GOTO start
 IF "%G%"=="3" Exit
+
 
 (
 IF "%D%"=="1" ECHO login anonymous 
