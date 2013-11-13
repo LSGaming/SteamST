@@ -9,16 +9,8 @@ Starting Server with Srcds:
 1. Make sure you have changed the paths and have installed the Game you want to start.
 2. just follow instructions on screen.
 
+You still need to add the mapcycle.txt and server.cfg manualy.
 SteamST will not reboot the server the server automaticly if it crashes.
-
-Starting Server with console:
-
-1. Make sure you have changed the paths and have installed the Game you want to start.
-2. Change the Startup instructions of the game you want to launch.
-3. Just follow instructions on screen.
-
-Console server will most of the time if it crashes automaticly reboot if not open it again with SteamST.Bat.
-
 
 THis is still in Beta.
 
