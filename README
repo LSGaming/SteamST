@@ -4,6 +4,8 @@ To use SteamST (Steam Server Tool):
 2. Change all Paths to the paths you want it to install to.
 3. Add Steam username and Steam password.
 
+This Program will not open your server again if it crashes.
+
 Stil in really rough alpha.
 
 Install and update works with:
