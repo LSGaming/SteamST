@@ -166,14 +166,10 @@ ECHO.
 SET "E="
 SET /P E=Choose number of choice and press [ENTER] 
 ECHO Loading.........
-IF "%E%"=="1" ECHO Install Garry's Mods
-IF "%E%"=="1" GOTO run
-IF "%E%"=="2" ECHO Install Counter-Strike: Source
-IF "%E%"=="2" GOTO run
-IF "%E%"=="3" ECHO Install Counter-Strike: GO
-IF "%E%"=="3" GOTO run
-IF "%E%"=="4" ECHO Install Left 4 Dead 2
-IF "%E%"=="4" GOTO run
+IF "%E%"=="1" ECHO Install Garry's Mods & GOTO run
+IF "%E%"=="2" ECHO Install Counter-Strike: Source & GOTO run
+IF "%E%"=="3" ECHO Install Counter-Strike: GO & GOTO run
+IF "%E%"=="4" ECHO Install Left 4 Dead 2 & GOTO run
 IF "%E%"=="5" GOTO update
 IF "%E%"=="6" EXIT
 IF "%E%"=="7" GOTO start
@@ -206,14 +202,10 @@ ECHO.
 SET "F="
 SET /P F=Choose number of choice and press [ENTER] 
 ECHO Loading.........
-IF "%F%"=="1" ECHO Validate Garry's Mod 
-IF "%F%"=="1" GOTO run
-IF "%F%"=="2" ECHO Validate Counter-Strike: Source 
-IF "%F%"=="2" GOTO run
-IF "%F%"=="3" ECHO Validate Counter-Strike: GO 
-IF "%F%"=="3" GOTO run
-IF "%E%"=="4" ECHO Validate Left 4 Dead 2
-IF "%E%"=="4" GOTO run
+IF "%F%"=="1" ECHO Validate Garry's Mod & GOTO run
+IF "%F%"=="2" ECHO Validate Counter-Strike: Source & GOTO run
+IF "%F%"=="3" ECHO Validate Counter-Strike: GO & GOTO run
+IF "%E%"=="4" ECHO Validate Left 4 Dead 2 & GOTO run
 IF "%F%"=="5" GOTO install
 IF "%F%"=="6" EXIT
 IF "%F%"=="7" GOTO start
