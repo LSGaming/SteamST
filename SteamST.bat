@@ -5,13 +5,10 @@
 set programname=SteamST
 set username=
 set password=
-
-::=======================::
-::        Values         ::
-::=======================::
 set servername=	
 
 @ECHO off
+
 
 :start
 
@@ -31,7 +28,6 @@ ECHO   ##############################################################
 ECHO.
 ECHO.
 
-
 SET "A="
 SET /P A=Choose number of choice and press [ENTER] 
 ECHO Loading.........
@@ -39,8 +35,8 @@ IF "%A%"=="1" GOTO server
 IF "%A%"=="2" GOTO login
 IF "%A%"=="3" EXIT
 
-:server
 
+:server
 
 cls
 CD %runcmd%
@@ -53,13 +49,13 @@ ECHO   #                                                            #
 ECHO   # 1 - Garry's Mod                                            #
 ECHO   # 2 - Counter-Strike: Source                                 #
 ECHO   # 3 - Counter-Strike: Global Offensive                       #
-ECHO   # 4 - Exit                                                   #
-ECHO   # 5 - Goto Start                                             #
+ECHO   # 4 - Left 4 Dead 2                                          #
+ECHO   # 5 - Exit                                                   #
+ECHO   # 6 - Goto Start                                             #
 ECHO   #                                                            #
 ECHO   ##############################################################
 ECHO.
 ECHO.
-
 
 SET "B="
 SET /P B=Choose number of choice and press [ENTER] 
@@ -67,13 +63,12 @@ ECHO Loading.........
 IF "%B%"=="1" GOTO run-server
 IF "%B%"=="2" GOTO run-server
 IF "%B%"=="3" GOTO run-server 
-IF "%B%"=="4" EXIT
-IF "%B%"=="5" GOTO start
-
+IF "%B%"=="4" GOTO run-server
+IF "%B%"=="5" EXIT
+IF "%B%"=="6" GOTO start
 
 
 :run-server
-
 
 cls
 CD %runcmd%
@@ -85,6 +80,7 @@ ECHO   #                         Run Server                         #
 IF "%B%"=="1" ECHO   #                    Garry's Mod                             #
 IF "%B%"=="2" ECHO   #                    Counter-Strike: Source                  #
 IF "%B%"=="3" ECHO   #                    Counter-Strike: Global Offensive        #
+IF "%B%"=="4" ECHO   #                    Left 4 Dead 2                           #
 ECHO   #                                                            #
 ECHO   # 1 - Yes                                                    #
 ECHO   # 2 - No                                                     #
@@ -94,8 +90,6 @@ ECHO   ##############################################################
 ECHO.
 ECHO.
 
-
-
 SET "C="
 SET /P C=Choose number of choice and press [ENTER] 
 ECHO Loading.........
@@ -103,22 +97,23 @@ IF "%C%"=="1" GOTO server-start
 IF "%C%"=="2" GOTO start
 IF "%C%"=="3" EXIT
 
-:server-start
 
+:server-start
 
 cls
 CD %runcmd%
 title %programname% - %servername%
 ECHO %programname% is started
 
- :restart
+:restart
 
 IF "%B%"=="1" START "G:\Server\Steam\GMod" srcds.exe
 IF "%B%"=="2" 
 IF "%B%"=="3" 
+IF "%B%"=="4"
+
 
 :login
-
 
 cls
 CD %runcmd%
@@ -135,7 +130,6 @@ ECHO   #                                                            #
 ECHO   ##############################################################
 ECHO.
 ECHO.
-
 
 SET "D="
 SET /P D=Choose number of choice and press [ENTER] 
@@ -208,7 +202,6 @@ ECHO   #                                                            #
 ECHO   ##############################################################
 ECHO.
 ECHO.
-
 
 SET "F="
 SET /P F=Choose number of choice and press [ENTER] 
