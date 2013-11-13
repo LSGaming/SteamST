@@ -1,7 +1,3 @@
-@ECHO off
-
-:start
-
 ::=======================::
 ::    SteamCMD Setup     ::
 ::       LSGaming        ::
@@ -15,6 +11,9 @@ set password=
 ::=======================::
 set servername=LSGaming Private Server	
 
+@ECHO off
+
+:start
 
 cls
 CD %runcmd%
