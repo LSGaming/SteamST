@@ -20,7 +20,7 @@ ECHO.
 ECHO   ##############################################################
 ECHO   #                        Server Setup                        #
 ECHO   #                                                            #
-ECHO   # 1 - Server Start  [NOT READY YET]                          #
+ECHO   # 1 - Server Start                                           #
 ECHO   # 2 - Install-Update-Validate                                #
 ECHO   # 3 - Exit                                                   #
 ECHO   #                                                            #
@@ -108,7 +108,7 @@ ECHO %programname% is started
 :restart
 
 IF "%B%"=="1" START G:\Server\Steam\GMod\srcds.exe & GOTO start
-IF "%B%"=="2" START G:\Server\Steam\CS\Source\srcds.exe & GOTO start
+IF "%B%"=="2" START G:\Server\Steam\CS\Source\srcds.exe -game cstrike & GOTO start
 IF "%B%"=="3" START G:\Server\Steam\CS\GO\srcds.exe & GOTO start
 IF "%B%"=="4" START G:\Server\Steam\L4D2\srcds.exe & GOTO start
 
