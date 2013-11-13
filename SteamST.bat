@@ -1,15 +1,15 @@
 ::=======================::
-::    SteamCMD Setup     ::
+::        SteamST        ::
 ::       LSGaming        ::
 ::=======================::
-set programname=SteamCMD Setup
+set programname=SteamST
 set username=
 set password=
 
 ::=======================::
 ::        Values         ::
 ::=======================::
-set servername=LSGaming Private Server	
+set servername=	
 
 @ECHO off
 
