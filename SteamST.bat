@@ -160,9 +160,10 @@ ECHO   #                                                            #
 ECHO   # 1 - Install Garry's Mods                                   #
 ECHO   # 2 - Install Counter-Strike: Source                         #
 ECHO   # 3 - Install Counter-Strike: GO                             #
-ECHO   # 4 - Goto Update-Validate                                   #
-ECHO   # 5 - Exit                                                   #
-ECHO   # 6 - Goto Start                                             #
+ECHO   # 4 - Install Left 4 Dead 2                                  #
+ECHO   # 5 - Goto Update-Validate                                   #
+ECHO   # 6 - Exit                                                   #
+ECHO   # 7 - Goto Start                                             #
 ECHO   #                                                            #
 ECHO   ##############################################################
 ECHO.
@@ -177,9 +178,11 @@ IF "%E%"=="2" ECHO Install Counter-Strike: Source
 IF "%E%"=="2" GOTO run
 IF "%E%"=="3" ECHO Install Counter-Strike: GO
 IF "%E%"=="3" GOTO run
-IF "%E%"=="4" GOTO update
-IF "%E%"=="5" EXIT
-IF "%E%"=="6" GOTO start
+IF "%E%"=="4" ECHO Install Left 4 Dead 2
+IF "%E%"=="4" GOTO run
+IF "%E%"=="5" GOTO update
+IF "%E%"=="6" EXIT
+IF "%E%"=="7" GOTO start
 
 
 :update
@@ -197,9 +200,10 @@ ECHO   #                                                            #
 ECHO   # 1 - Update-Validate Garry's Mod                            #
 ECHO   # 2 - Update-Validate Counter-Strike: Source                 #
 ECHO   # 3 - Update-Validate Counter-Strike: GO                     #
-ECHO   # 4 - Goto Install                                           #
-ECHO   # 5 - Exit                                                   #
-ECHO   # 6 - Goto Start                                             #
+ECHO   # 4 - Update-Validate Left 4 Dead 2                          #
+ECHO   # 5 - Goto Install                                           #
+ECHO   # 6 - Exit                                                   #
+ECHO   # 7 - Goto Start                                             #
 ECHO   #                                                            #
 ECHO   ##############################################################
 ECHO.
@@ -215,9 +219,11 @@ IF "%F%"=="2" ECHO Validate Counter-Strike: Source
 IF "%F%"=="2" GOTO run
 IF "%F%"=="3" ECHO Validate Counter-Strike: GO 
 IF "%F%"=="3" GOTO run
-IF "%F%"=="4" GOTO install
-IF "%F%"=="5" EXIT
-IF "%F%"=="6" GOTO start
+IF "%E%"=="4" ECHO Validate Left 4 Dead 2
+IF "%E%"=="4" GOTO run
+IF "%F%"=="5" GOTO install
+IF "%F%"=="6" EXIT
+IF "%F%"=="7" GOTO start
 
 
 :run
@@ -234,9 +240,11 @@ IF "%D%"=="2" ECHO   #                  Chosen Login: Account                   
 IF "%E%"=="1" ECHO   #                  Install Garry's Mod                       #
 IF "%E%"=="2" ECHO   #                  Install Counter-Strike: Source            #
 IF "%E%"=="3" ECHO   #                  Install Counter-strike: GO                #
+IF "%E%"=="4" ECHO   #                  Install Left 4 Dead 2                     #
 IF "%F%"=="1" ECHO   #                  Update-Validate Garry's Mod               # 
 IF "%F%"=="2" ECHO   #                  Update-Validate Counter-Strike: Source    #
 IF "%F%"=="3" ECHO   #                  Update-Validate Counter-Strike: GO        #
+IF "%F%"=="4" ECHO   #                  Update-Validate Left 4 Dead 2             #
 ECHO   #                                                            #
 ECHO   # Do you want to do the above.                               #
 ECHO   # 1 - Yes                                                    #
@@ -264,12 +272,16 @@ IF "%E%"=="2" ECHO force_install_dir G:\Server\Steam\CS\Source
 IF "%E%"=="2" ECHO app_update 232330
 IF "%E%"=="3" ECHO force_install_dir G:\Server\Steam\CS\GO
 IF "%E%"=="3" ECHO app_update 740
+IF "%E%"=="4" ECHO force_install_dir G:\Server\Steam\L4D2
+IF "%E%"=="4" ECHO app_update 222860
 IF "%F%"=="1" ECHO force_install_dir G:\Server\Steam\GMod
 IF "%F%"=="1" ECHO app_update 4020 validate
 IF "%F%"=="2" ECHO force_install_dir G:\Server\Steam\CS\Source
 IF "%F%"=="2" ECHO app_update 232330 validate
 IF "%F%"=="3" ECHO force_install_dir G:\Server\Steam\CS\GO
 IF "%F%"=="3" ECHO app_update 740 validate
+IF "%F%"=="4" ECHO force_install_dir G:\Server\Steam\L4D2
+IF "%F%"=="4" ECHO app_update 222860 validate
 ECHO quit
 ) >script.txt
 
