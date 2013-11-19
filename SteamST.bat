@@ -124,9 +124,9 @@ cls
 title %programname% - %servername%
 ECHO %programname% is started
 
-IF "%B%"=="1" START G:\Server\Steam\GMod\srcds.exe & EXIT
-IF "%B%"=="2" START G:\Server\Steam\CS\Source\srcds.exe -game cstrike & EXIT
-IF "%B%"=="3" START G:\Server\Steam\TF2\srcds.exe -game tf & EXIT
+IF "%B%"=="1" START %dir-gmod%\srcds.exe & EXIT
+IF "%B%"=="2" START %dir-cssource%\srcds.exe -game cstrike & EXIT
+IF "%B%"=="3" START %dir-tf2%\srcds.exe -game tf & EXIT
 
 :run-server-console
 
@@ -163,11 +163,11 @@ GOTO run-server-console
 :server-start-console
 
 cls
-IF "%B%"=="4" set runcmd=G:\Server\Steam\GMod\srcds.exe -console -game garrysmod -maxplayers 16 -port 27015 +map gm_construct
+IF "%B%"=="4" set runcmd=%dir-gmod%\srcds.exe -console -game garrysmod -maxplayers 16 -port 27015 +map gm_construct
 IF "%B%"=="4" set servername=TTT
-IF "%B%"=="5" set runcmd=G:\Server\Steam\CS\Source\srcds.exe -console -game cstrike -maxplayers 16 +fps_max 200 -port 27015 +map de_dust -tickrate 66
+IF "%B%"=="5" set runcmd=%dir-cssource%\srcds.exe -console -game cstrike -maxplayers 16 +fps_max 200 -port 27015 +map de_dust -tickrate 66
 IF "%B%"=="5" set servername=Counter-Strike
-IF "%B%"=="6" set runcmd=G:\Server\Steam\TF2\srcds.exe -console -game tf -maxplayers 16 -port 27015 +map ctf_2fort
+IF "%B%"=="6" set runcmd=%dir-tf2%\srcds.exe -console -game tf -maxplayers 16 -port 27015 +map ctf_2fort
 IF "%B%"=="6" set servername=TF2
  
 :: Prints to the window what we are doing

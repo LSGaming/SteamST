@@ -1,8 +1,15 @@
 To use SteamST (Steam Server Tool):
 
-1. Put in same directory as SteamCMD.
-2. Change all Paths to the paths you want it to install to.
+1. Put in same Directory as SteamCMD.
+2. Change all Directory Paths to the paths you want it to install to.
 3. Add Steam username and Steam password and a servername.
+
+Installing/Updating:
+
+1. Make sure you have changed the paths and have installed the Game you want to start.
+2. just follow instructions on screen.
+
+SteamST will not make a mapcycle.txt and server.cfg and the other files.
 
 Starting Server with GUI:
 
@@ -16,6 +23,9 @@ Starting Server with Console
 1. Make sure you have changed the paths and have installed the Game you want to start.
 2. Change starting commands for when the server starts.
 3. just follow instructions on screen.
+
+You still need to add the mapcycle.txt and server.cfg and the other files manualy.
+SteamST will not reboot the server the server automaticly if it crashes.
 
 THis is still in Beta.
 
