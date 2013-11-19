@@ -9,10 +9,10 @@ SET password=
 ::         Server        ::
 ::       Directory       ::
 ::=======================::
-:: Example SET server-gmod=G:\Server\Steam\GMod
-SET server-gmod=G:\Server\Steam\GMod
-SET server-cssource=G:\Server\Steam\CS\Source
-SET server-tf2=G:\Server\Steam\TF2
+:: Example SET dir-gmod=G:\Server\Steam\GMod
+SET dir-gmod=
+SET dir-cssource=
+SET dir-tf2=
 
 
 @ECHO off
@@ -316,17 +316,11 @@ ECHO   #                            Run                             #
 IF "%D%"=="1" ECHO   # - Chosen Login: Anonymous                                  #
 IF "%D%"=="2" ECHO   # - Chosen Login: Account                                    #
 IF "%E%"=="1" ECHO   # - Install Garry's Mod                                      #
-IF "%E%"=="1" ECHO   # - DIR:%dir-gmod%                                           #
 IF "%E%"=="2" ECHO   # - Install Counter-Strike: Source                           #
-IF "%E%"=="2" ECHO   # - DIR:%dir-cssource%                                       #
 IF "%E%"=="3" ECHO   # - Install Team Fortress 2                                  #
-IF "%E%"=="3" ECHO   # - DIR:%dir-tf2%                                            #
-IF "%F%"=="1" ECHO   # - Update-Validate Garry's Mod                              #
-IF "%F%"=="1" ECHO   # - DIR:%dir-gmod%                                           # 
+IF "%F%"=="1" ECHO   # - Update-Validate Garry's Mod                              # 
 IF "%F%"=="2" ECHO   # - Update-Validate Counter-Strike: Source                   #
-IF "%F%"=="2" ECHO   # - DIR:%dir-cssource%                                       #
-IF "%F%"=="3" ECHO   # - Update-Validate Team Fortress 2                          #
-IF "%F%"=="3" ECHO   # - DIR:%dir-tf2%                                            #  
+IF "%F%"=="3" ECHO   # - Update-Validate Team Fortress 2                          # 
 ECHO   #                                                            #
 ECHO   # Do you want to do the above.                               #
 ECHO   # 1 - Yes                                                    #
