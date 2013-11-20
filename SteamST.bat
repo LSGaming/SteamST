@@ -13,6 +13,8 @@ SET password=
 SET dir-gmod=
 SET dir-cssource=
 SET dir-tf2=
+SET dir-steamcmd=
+SET dir-steamcmdscript=
 
 
 @ECHO off
@@ -361,5 +363,5 @@ ECHO logout
 ECHO quit
 ) >script.txt
 
-::steamcmd.exe +runscript script.txt
+%dir-steamcmd% +runscript %dir-steamcmdscript%
 EXIT

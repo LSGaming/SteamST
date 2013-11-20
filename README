@@ -1,8 +1,8 @@
 To use SteamST (Steam Server Tool):
 
-1. Put in same Directory as SteamCMD.
-2. Change all Directory Paths to the paths you want it to install to.
-3. Add Steam username and Steam password and a servername.
+1. Change all Directory Paths to the paths you want it to install to.
+2. Add Steam username and Steam password and a servername.
+3. Make sure none of the Directorys have a space in the name.
 
 Installing/Updating:
 
